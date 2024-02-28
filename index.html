@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerrinthraj Portfolio</title>
+
+    <!-- Font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Styling CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+         <div id="brand"><a href="/">JERRINTHRAJ</a></div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="./#contact-section">Contact</a></li>
+          <li id="login"><a href="/login" >Download CV</a></li>
+         
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="/home">Home</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/about">About</a></li>
+          <li id="login"><a href="/login" >Login</a></li>
+        </ul>
+      </div>
+        
+    </header>
+<main>
+<section class="hero-section">
+    <div>
+        <div>
+            <h4 title="Hello, How are you?">Hi there !</h4>
+            <h2 class="hero-section__title">I'm <span>Jerrinthraj</span></h2>
+            <p class="hero-section__desc">Enthusiastic frontend developer eager to apply skills in web development, enhance expertise, 
+                and contribute to innovative projects within a dynamic team environment. Seeking opportunities for growth and impact.</p>
+
+        </div>
+        <ul class="social-icons">
+            <!-- Social icons will be appeared here -->
+            <li>
+                <a href="https://www.linkedin.com/in/jerrinth-raj/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com/anbuselvanrocky" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/anbuselvanrocky" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="hero-buttons">
+            <button class="btn btn-dark-outlined hire">Hire me</button>
+            <button class="btn btn-dark-outlined">Download CV</button>
+        </div>
+    </div>
+  <div>
+    <img src="./images/images.png" alt="jerrinthraj" width="400">
+  </div>
+</section>
+
+<section class="about-section" id="about-section">
+    <img src="./images/images.png" alt="Anbuselvan rocky about me">
+
+    <div class="about-section--desc">
+        <h4>I am Product <span>Designer</span> <br> & Web Developer</h4>
+        <ul>
+            <li>
+                <strong>Experience:</strong> 8 years
+            </li>
+            <li>
+                <strong>Speciality:</strong> CyberSecurity
+            </li>
+            <li>
+                <strong>Address:</strong> India
+            </li>
+            <li>
+                <strong>Email:</strong> <a href="mailto:anbu@mailme.com">anbu@mailme.com</a>
+            </li>
+            <li>
+                <strong>Phone:</strong> <a href="tel:+91987654321">+91987654321</a>
+            </li>
+        </ul>
+        <button class="btn btn-primary">Know more</button>
+    </div>
+</section>
+<section class="work-section">
+    <h4 class="work-section__title">My <span>Works</span></h4>
+    <div class="work-section-items">
+        <div class="work-section-box">
+            <span class="work-section-box__icon">
+                <i class="fa-solid fa-display"></i>
+            </span>
+            <!-- icon will be here shortly -->
+            <div class="work-section-box__desc">
+                <h4>UI/UX Design</h4>
+                <p>Worked on several open source projects with Google, Netlify, etc.</p>
+            </div>
+            <a href="#">See my work here...</a>
+        </div>
+        <div class="work-section-box">
+            <span class="work-section-box__icon">
+                <i class="fa-solid fa-flask"></i>
+            </span>
+            <!-- icon will be here shortly -->
+            <div class="work-section-box__desc">
+                <h4>Frontend Development</h4>
+                <p>Worked with HTML, CSS, Bootstrap, TailwindCSS.</p>
+            </div>
+            <a href="#">See my work here...</a>
+        </div>
+        <div class="work-section-box">
+            <span class="work-section-box__icon">
+                <i class="fa-solid fa-code"></i>
+            </span>
+            <!-- icon will be here shortly -->
+            <div class="work-section-box__desc">
+                <h4>Backend Development</h4>
+                <p>Worked with PHP, NodeJS, Python, etc.</p>
+            </div>
+            <a href="#">See my work here...</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Me -->
+<section class="contact-section" id="contact-section">
+    <h4>Contact <span>Me</span></h4>
+
+    <form>
+        <div>
+            <input type="text" name="name" placeholder="Full Name">
+        </div>
+        <div>
+            <input type="text" name="subject" placeholder="Whats the matter?">
+        </div>
+        <div>
+            <!-- <input type="text" name="description" placeholder="Enter briefly..."> -->
+            <textarea name="description" rows="5" placeholder="Enter briefly..."></textarea>
+        </div>
+        <div>
+            <button class="btn btn-primary">Send a message</button>
+        </div>
+    </form>
+
+</section>
+
+</main>
+<footer>
+    <p>Copyright &copy; 2023 - <a href="https://github.com/anburocky3" target="_blank">Anbuselvan Rocky</a> - All
+        Rights
+        Reserved.</p>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
